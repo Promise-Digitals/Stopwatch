@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    position: relative;
+    padding: 1px;
+}
+.logo{
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    width: 230px;
+}
+.watch{
+    width: 90%;
+    max-width: 650px;
+    margin: 130px auto 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/background.jpg);
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.watch h1{
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    margin: 60px auto 0;
+    font-weight: 300;
+}
+.control{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.control img{
+    width: 60px;
+    margin: 20px;
+}
+.control img:nth-child(2){
+    width: 100px;
+}
