@@ -11,12 +11,6 @@
     position: relative;
     padding: 1px;
 }
-.logo{
-    position: absolute;
-    top: 2%;
-    left: 3%;
-    width: 230px;
-}
 .watch{
     width: 90%;
     max-width: 650px;
