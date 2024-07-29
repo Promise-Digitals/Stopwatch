@@ -10,12 +10,19 @@
     background: #fff;
     position: relative;
     padding: 1px;
+    display: grid;
+    place-items: center;
+}
+.logo{
+    width: 45px;
+    position: fixed;
+    top: 2%;
+    left: 2%;
 }
 .watch{
     width: 90%;
-    max-width: 650px;
-    margin: 130px auto 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/background.jpg);
+    max-width: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/watch.jpg);
     padding: 20px;
     background-size: cover;
     background-position: center;
@@ -25,7 +32,7 @@
     color: #fff;
     font-size: 100px;
     text-align: center;
-    margin: 60px auto 0;
+    margin: 100px auto 0;
     font-weight: 300;
 }
 .control{
@@ -36,9 +43,26 @@
     width: 100%;
 }
 .control img{
-    width: 60px;
-    margin: 20px;
+    width: 50px;
+    margin: 50px;
 }
-.control img:nth-child(2){
-    width: 100px;
+
+.control img:hover{
+    width: 60px;
+}
+.play-btn{
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    background-clip: border-box;
+    background-origin: border-box;
+    border-radius: 50%;
+    border: 5px solid #6660ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.play-btn span{
+    color: #fff;
+    font-size: 30px;
 }

@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Stopwatch</title>
 </head>
 <body>
     <div class="container">
+        <img src="/images/logo.png" class="logo">
         <div class="watch">
             <h1 id="displayTime">00:00:00:00</h1>
             <div class="control">
                 <img src="/images/stop.png" onclick="watchStop()">
-                <img src="/images/start.png" onclick="watchStart()">
+                <div onclick="watchStart()" class="play-btn">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </div>
                 <img src="/images/reset.png" onclick="resetTime()">
             </div>
         </div>
     </div>
+
+
+
+
+
     <script>
         let [milliseconds, seconds, minutes, hours] = [0,0,0,0];
         let displayTime = document.getElementById("displayTime");
